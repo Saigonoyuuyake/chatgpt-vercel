@@ -1,7 +1,7 @@
 import type { Model } from "./types"
 
 /**
- * 用于创建 .env.example 文件，不要直接填写敏感信息。
+ * 用于创建 .env 文件，不要直接填写敏感信息。
  * 以 CLIENT_ 开头的变量会暴露给前端
  */
 export const defaultEnv = {

@@ -7,7 +7,7 @@ const env = Object.entries(defaultEnv).reduce((acc, [key, value]) => {
   acc.push(`${key}=${v || ""}`)
   return acc
 }, [] as string[])
-await fs.writeFile(".env.example", env.join("\n"))
+await fs.writeFile(".env", env.join("\n"))
 
 const envDTS = `interface ImportMetaEnv {
 ${Object.keys(defaultEnv)
